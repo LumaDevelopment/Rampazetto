@@ -79,9 +79,12 @@ public class Recorder {
      */
     public String stopRecording() {
 
-        recorder.stop();
-        recorder.release();
-        recorder = null;
+        if (recorder != null) {
+            recorder.stop();
+            recorder.release();
+            recorder = null;
+        }
+
         recording = false;
 
         return currentFilename;

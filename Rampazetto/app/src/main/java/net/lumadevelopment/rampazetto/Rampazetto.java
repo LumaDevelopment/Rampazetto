@@ -75,6 +75,8 @@ public class Rampazetto extends AppCompatActivity {
         // Request permissions
         ActivityCompat.requestPermissions(this, permissions, PERMISSIONS_GRANTED_CODE);
 
+        // Brings up the screen to give the app the permission to manage all files
+        // if it doesn't have it already.
         if (!Environment.isExternalStorageManager()) {
             Intent intent = new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION);
             intent.addCategory("android.intent.category.DEFAULT");
