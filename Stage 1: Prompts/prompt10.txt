@@ -1,0 +1,41 @@
+The Florida Institute of Technology, located in Melbourne, Florida, has a rich history that spans over six decades. Founded in 1958 as the Brevard Engineering College, the school has grown and evolved into a leading institution of higher learning in the fields of science, technology, engineering, and mathematics (STEM).
+
+In the early years of its existence, the Brevard Engineering College primarily served the needs of local businesses and industries in the aerospace and defense sectors. However, as the school grew and expanded, it soon became apparent that there was a demand for a broader range of programs and courses. In 1966, the school was renamed the Florida Institute of Technology, reflecting its growing reputation and aspirations as a comprehensive institution of higher learning.
+
+Over the next several decades, the Florida Institute of Technology continued to expand its academic offerings, adding new programs in areas such as business, psychology, and humanities. The school also made significant investments in its physical campus, constructing new buildings and facilities to accommodate the growing student body.
+
+One of the most notable developments in the history of the Florida Institute of Technology was the establishment of its highly regarded College of Aeronautics. Founded in 1984, the College of Aeronautics has since become one of the leading institutions of its kind in the world, offering a wide range of programs and degrees in the fields of aviation and aerospace.
+
+In recent years, the Florida Institute of Technology has continued to build on its legacy of excellence, establishing new programs and partnerships with leading organizations in the private sector, government, and academia. The school has also expanded its international reach, partnering with universities and organizations around the world to offer students the opportunity to study abroad and gain a truly global perspective.
+
+Today, the Florida Institute of Technology is widely recognized as one of the top institutions of higher learning in the United States. With its strong commitment to academic excellence and its cutting-edge programs in STEM fields, the school remains at the forefront of innovation and discovery in the 21st century.
+
+In conclusion, the history of the Florida Institute of Technology is a story of growth, innovation, and achievement. From its humble beginnings as a local college serving the needs of the aerospace and defense industries, the school has grown into a leading institution of higher learning, offering students a world-class education and preparing them for success in the global marketplace.
+
+a: 163
+b: 19
+c: 81
+d: 97
+e: 259
+f: 61
+g: 75
+h: 96
+i: 186
+j: 0
+k: 2
+l: 86
+m: 38
+n: 196
+o: 180
+p: 34
+q: 0
+r: 119
+s: 154
+t: 193
+u: 46
+v: 22
+w: 21
+x: 8
+y: 29
+z: 3
+Average letter occurrence: 83.38461538461539

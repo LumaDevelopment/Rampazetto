@@ -1,0 +1,29 @@
+this is an example for the lumadevelopment profile on github
+
+a: 3
+b: 1
+c: 0
+d: 1
+e: 7
+f: 2
+g: 1
+h: 3
+i: 4
+j: 0
+k: 0
+l: 4
+m: 3
+n: 3
+o: 4
+p: 3
+q: 0
+r: 2
+s: 2
+t: 4
+u: 2
+v: 1
+w: 0
+x: 1
+y: 0
+z: 0
+Average letter occurrence: 1.9615384615384615

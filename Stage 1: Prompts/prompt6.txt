@@ -1,0 +1,41 @@
+Once upon a time, in a mysterious land called Zaqox, there lived a brave adventurer named Jack. He was known for his quick wit and fearless spirit, and he was always on the hunt for his next big adventure.
+
+One day, Jack received a mysterious letter from a wealthy queen. She had heard of his reputation and offered him a quest to retrieve a legendary artifact that had been lost for centuries. The artifact was said to hold immense power and could only be found by solving a series of riddles and challenges.
+
+Excited by the prospect of a new adventure, Jack set out on his quest. He journeyed through dangerous jungles, crossed treacherous deserts, and braved the bitter cold of the mountains. At every step of the way, he was met with riddles and challenges, each more difficult than the last.
+
+Along the way, Jack met a wise old wizard named Qix, who offered to help him on his quest. Qix was a master of magic and had a deep knowledge of the ancient ruins and hidden paths that Jack needed to navigate. With Qix's help, Jack finally solved the last riddle and discovered the location of the legendary artifact.
+
+The artifact was guarded by a powerful demon named Zax, who was determined to keep the artifact for himself. Jack and Qix were no match for the demon's power, but Jack's quick wit and bravery saved the day. He tricked Zax into a trap, and with Qix's help, he retrieved the artifact and returned it to the queen.
+
+The queen was overjoyed to have the artifact back in her possession and rewarded Jack handsomely. Jack used his newfound wealth to continue his adventures, always searching for his next big quest.
+
+And so, Jack lived a life filled with adventure, excitement, and riches, always on the hunt for his next big quest. The end.
+
+a: 133
+b: 14
+c: 45
+d: 87
+e: 187
+f: 37
+g: 17
+h: 77
+i: 82
+j: 14
+k: 18
+l: 47
+m: 24
+n: 88
+o: 78
+p: 17
+q: 16
+r: 78
+s: 79
+t: 118
+u: 40
+v: 21
+w: 34
+x: 13
+y: 22
+z: 4
+Average letter occurrence: 53.46153846153846

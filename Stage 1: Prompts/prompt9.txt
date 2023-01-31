@@ -1,0 +1,37 @@
+Introducing KeyClassify: The Android app that revolutionizes the way you type on your phone! KeyClassify uses the phone's microphone and a cutting-edge machine learning model to classify keystrokes based on the audio they produce.
+
+Gone are the days of struggling to type in noisy environments or in the dark. With KeyClassify, you can effortlessly type on your phone with complete accuracy, no matter the surroundings. The app's advanced machine learning algorithms analyze the sound of each keystroke and use that information to determine which letter or symbol was typed.
+
+KeyClassify is incredibly user-friendly and easy to use. Simply launch the app, grant access to your microphone, and start typing as you normally would. The app will seamlessly run in the background, providing you with accurate results in real-time.
+
+In addition to its impressive accuracy, KeyClassify also offers a wide range of customization options. You can choose from a variety of themes, change the font size and type, and even adjust the sensitivity of the microphone to suit your needs.
+
+Whether you're in a noisy coffee shop or typing in the dark, KeyClassify has got you covered. Download KeyClassify today and experience a new level of typing accuracy and convenience!
+
+a: 78
+b: 4
+c: 46
+d: 39
+e: 114
+f: 24
+g: 20
+h: 42
+i: 71
+j: 1
+k: 14
+l: 37
+m: 21
+n: 79
+o: 84
+p: 30
+q: 0
+r: 55
+s: 70
+t: 77
+u: 36
+v: 11
+w: 12
+x: 1
+y: 56
+z: 4
+Average letter occurrence: 39.46153846153846

@@ -1,0 +1,41 @@
+Once upon a time, in a magical kingdom called Azura, there lived a brave prince named Colin. He lived in a magnificent castle surrounded by lush gardens and rolling hills. One day, he received a distress call from the neighboring kingdom of Brynn. A wicked witch named Zara had taken over and was terrorizing the people.
+
+Colin knew he had to act quickly, so he gathered his bravest knights and set out on a journey to Brynn. On their way, they encountered a dragon named Eris who breathed fire and smoke. Colin was undaunted, and with the help of his trusty sword, he defeated the dragon and continued on his journey.
+
+When they finally arrived in Brynn, they found the kingdom in chaos. The wicked witch Zara had put a spell on the people, causing them to forget their names, their homes, and their families. Colin and his knights set out to find Zara and put an end to her evil ways.
+
+They traveled through dark forests, crossed raging rivers, and climbed treacherous mountains, facing danger at every turn. Along the way, they met a wise old wizard named Gideon who gave them valuable advice and helped them on their quest.
+
+Finally, they reached Zara's castle and confronted her. The wicked witch was powerful, but Colin and his knights were determined. With the help of Gideon's magic, they broke the spell and freed the people of Brynn from Zara's grasp.
+
+The people of Brynn were grateful and threw a grand celebration in Colin's honor. They hailed him as their hero and crowned him the new king of Brynn. Colin ruled justly and with kindness, and the kingdom of Brynn flourished once again.
+
+And so, Colin lived happily ever after, surrounded by the love of his people and the magic of Azura. The end.
+
+a: 112
+b: 18
+c: 41
+d: 84
+e: 169
+f: 28
+g: 35
+h: 86
+i: 91
+j: 3
+k: 18
+l: 57
+m: 28
+n: 120
+o: 86
+p: 23
+q: 2
+r: 89
+s: 58
+t: 91
+u: 34
+v: 17
+w: 28
+x: 0
+y: 30
+z: 9
+Average letter occurrence: 52.19230769230769
