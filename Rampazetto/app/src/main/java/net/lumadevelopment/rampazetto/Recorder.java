@@ -53,6 +53,7 @@ public class Recorder {
         recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
         recorder.setOutputFile(getNextRecordingFileObj());
         recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
+        recorder.setAudioSamplingRate(44100);
 
         try {
 
