@@ -26,9 +26,8 @@
         android:layout_marginStart="43dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="43dp"
-        android:layout_marginBottom="8dp"
         android:text="Start Recording"
-        app:layout_constraintBottom_toTopOf="@+id/inferenceHeader"
+        app:layout_constraintBottom_toTopOf="@+id/textField"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recordHeader" />
@@ -38,10 +37,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="43dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="309dp"
-        android:layout_marginBottom="605dp"
+        android:layout_marginBottom="550dp"
         android:text="Inference"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textField" />
+
+    <EditText
+        android:id="@+id/textField"
+        android:layout_width="325dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/inferenceHeader"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recordingToggle" />

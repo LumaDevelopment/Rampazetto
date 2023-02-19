@@ -7,7 +7,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.Settings;
+import android.view.KeyEvent;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -86,6 +88,20 @@ public class Rampazetto extends AppCompatActivity {
 
         // Initialize Recorder object
         recorder = new Recorder();
+
+        EditText editText = findViewById(R.id.textField);
+
+        editText.setOnKeyListener((v, keyCode, event) -> {
+
+            if (event.getAction() == KeyEvent.ACTION_DOWN) {
+                recorder.getKeyPressMgr().onKeyDown(keyCode, event);
+            } else if (event.getAction() == KeyEvent.ACTION_UP) {
+                recorder.getKeyPressMgr().onKeyUp(keyCode, event);
+            }
+
+            return true;
+
+        });
 
         // Create recording button.
         Button recordingToggleButton = findViewById(R.id.recordingToggle);

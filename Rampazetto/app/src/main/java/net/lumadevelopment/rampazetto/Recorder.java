@@ -8,6 +8,8 @@ import org.apache.commons.lang3.exception.ExceptionUtils;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Manages audio recording for Rampazetto, a minor but
@@ -20,7 +22,10 @@ public class Recorder {
 
     // Instance variables
     private MediaRecorder recorder;
+    private KeyPressMgr keyPressMgr;
     private boolean recording;
+    private File lastRecordingObject;
+    private long lastStartTime;
 
     // File saving variables
     public static final String RECORDING_PREFIX = "rampazettoRecording";
@@ -33,11 +38,17 @@ public class Recorder {
         // We don't initialize the app recording
         recording = false;
 
+        keyPressMgr = new KeyPressMgr();
+
     }
 
     // Getter method
     public boolean isRecording() {
         return recording;
+    }
+
+    public KeyPressMgr getKeyPressMgr() {
+        return keyPressMgr;
     }
 
     /**
@@ -47,11 +58,12 @@ public class Recorder {
     public void startRecording() {
 
         recorder = new MediaRecorder();
+        lastRecordingObject = getNextRecordingFileObj();
 
         // Configure recorder
         recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
         recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
-        recorder.setOutputFile(getNextRecordingFileObj());
+        recorder.setOutputFile(lastRecordingObject);
         recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
         recorder.setAudioSamplingRate(44100);
 
@@ -66,6 +78,11 @@ public class Recorder {
 
         }
 
+        keyPressMgr.resetKeyPresses();
+
+        lastStartTime = System.currentTimeMillis();
+        keyPressMgr.setListening(true);
+
         recorder.start();
 
         // UI value
@@ -79,6 +96,9 @@ public class Recorder {
      * @return The filename of the saved recording.
      */
     public String stopRecording() {
+
+        keyPressMgr.setListening(false);
+        submitToAudioCategorizer();
 
         if (recorder != null) {
             recorder.stop();
@@ -163,6 +183,22 @@ public class Recorder {
 
         recorder.release();
         recorder = null;
+
+    }
+
+    public void submitToAudioCategorizer() {
+
+        List<KeyPress> keyPresses = keyPressMgr.getKeyPresses();
+
+        for (KeyPress keyPress : keyPresses) {
+            keyPress.adjustToClipStart(lastStartTime);
+        }
+
+        Collections.sort(keyPresses);
+
+        new Thread(() -> {
+            new AudioCategorizer(keyPresses, lastRecordingObject).run();
+        }).start();
 
     }
 
