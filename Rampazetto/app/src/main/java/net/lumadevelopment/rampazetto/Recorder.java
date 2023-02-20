@@ -64,7 +64,7 @@ public class Recorder {
         recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
         recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
         recorder.setOutputFile(lastRecordingObject);
-        recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
+        recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
         recorder.setAudioSamplingRate(44100);
 
         try {
@@ -78,12 +78,16 @@ public class Recorder {
 
         }
 
+        Log.d(LOG_TAG, "Recorder successfully initialized and prepared!");
+
         keyPressMgr.resetKeyPresses();
 
         lastStartTime = System.currentTimeMillis();
         keyPressMgr.setListening(true);
 
         recorder.start();
+
+        Log.d(LOG_TAG, "Recording started!");
 
         // UI value
         recording = true;
@@ -98,13 +102,16 @@ public class Recorder {
     public String stopRecording() {
 
         keyPressMgr.setListening(false);
-        submitToAudioCategorizer();
 
         if (recorder != null) {
             recorder.stop();
             recorder.release();
             recorder = null;
         }
+
+        Log.d(LOG_TAG, "Recording stopped, file saved! Submitting to audio categorizer.");
+
+        submitToAudioCategorizer();
 
         recording = false;
 
@@ -190,12 +197,17 @@ public class Recorder {
 
         List<KeyPress> keyPresses = keyPressMgr.getKeyPresses();
 
+        Log.d(LOG_TAG, "Adjusting key presses to clip start time: " + lastStartTime);
+
         for (KeyPress keyPress : keyPresses) {
             keyPress.adjustToClipStart(lastStartTime);
         }
 
+        Log.d(LOG_TAG, "Sorting key presses by key down time");
+
         Collections.sort(keyPresses);
 
+        Log.d(LOG_TAG, "Submitting to audio categorizer in new thread!");
         new Thread(() -> {
             new AudioCategorizer(keyPresses, lastRecordingObject).run();
         }).start();

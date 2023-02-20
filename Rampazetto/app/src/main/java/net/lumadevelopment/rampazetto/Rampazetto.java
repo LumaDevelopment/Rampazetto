@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.widget.Button;
 import android.widget.EditText;
@@ -94,9 +95,9 @@ public class Rampazetto extends AppCompatActivity {
         editText.setOnKeyListener((v, keyCode, event) -> {
 
             if (event.getAction() == KeyEvent.ACTION_DOWN) {
-                recorder.getKeyPressMgr().onKeyDown(keyCode, event);
+                recorder.getKeyPressMgr().onKeyDown(keyCode);
             } else if (event.getAction() == KeyEvent.ACTION_UP) {
-                recorder.getKeyPressMgr().onKeyUp(keyCode, event);
+                recorder.getKeyPressMgr().onKeyUp(keyCode);
             }
 
             return true;
@@ -112,7 +113,7 @@ public class Rampazetto extends AppCompatActivity {
 
                 // If recorder is recording, then stop recording, save the file,
                 // and toast the file name.
-                toast("Recording saved to " + recorder.stopRecording());
+                toast("Recording saved to " + recorder.stopRecording() + ", categorizing...");
                 recordingToggleButton.setText(NOT_RECORDING_BUTTON_TEXT);
 
             } else {
@@ -124,6 +125,8 @@ public class Rampazetto extends AppCompatActivity {
             }
 
         });
+
+        Log.d(LOG_TAG, "UI initialized.");
 
     }
 
